@@ -46,9 +46,6 @@
 		 	<div id="user-details-content"></div>
 		 </div>
 		 
-		 
-		 
-		 
 <form id="paypal-form" action="" method="post">
 	<input type="hidden" name="cmd" value="_cart" />
 	<input type="hidden" name="upload" value="1" />
@@ -78,18 +75,40 @@
   
   
 	<button id="payWithCardBtn" class="btn">Pay with Card</button>
-  </div>
-  
-		 
-		 
-	</div>
-	
-	
+</div>
+
+</div>
+
+<script>
+// OTP verification
+function promptOTP(phone) {
+    console.log("OTP has been sent to " + phone);
+    var otp = prompt("Please enter the OTP sent to your phone number:");
+    verifyOTP(otp);
+}
+
+function verifyOTP(otp) {
+    if (otp === "123456") {
+        console.log("OTP verification successful.");
+        // Proceed with the order processing or redirection to the success page
+    } else {
+        console.error("Invalid OTP. Please enter the correct OTP.");
+    }
+}
+
+// Handle form submission
+$(document).ready(function() {
+    $("#cardPaymentForm").submit(function(e) {
+        e.preventDefault();
+
+        var phone = $("#phone").val();
+        promptOTP(phone);
+    });
+});
+</script>
 
 </div>
 
 
 </body>
-</html>	
-
-   
+</html>

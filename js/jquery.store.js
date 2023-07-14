@@ -1,9 +1,12 @@
 $.noConflict();
 (function( jQuery ) {
+
+
 	jQuery.Shop = function( element ) {
 		this.jQueryelement = jQuery ( element );
 		this.init();
 	};
+	
 	
 	jQuery.Shop.prototype = {
 		init: function() {
@@ -61,9 +64,14 @@ $.noConflict();
 			this.populatePayPalForm();
 			
 			
+	
+			
 		},
+
 		
-		// Public methods
+	
+	
+	
 		
 		// Creates the cart keys in the session storage
 		
