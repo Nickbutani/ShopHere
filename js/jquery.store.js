@@ -680,6 +680,8 @@ $.noConflict();
 			});
 		}
 	};
+
+
 	
 	jQuery(function() {
 		var shop = new jQuery.Shop( "#site" );
