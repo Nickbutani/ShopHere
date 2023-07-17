@@ -119,12 +119,7 @@ html {
 }
 
 
-#Slider
-{
-	
-	width: auto;
-	height: 240px;;
-}
+
 
 
 
@@ -385,10 +380,7 @@ form input.qty {
 }
 
 
-#slider
-{
-	width: 100%;
-}
+
 
 #about
 {
@@ -856,4 +848,8 @@ body#checkout-page  #site-info, body#cart-page #site-info {
 
     
 
-
+#cardPaymentForm label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
