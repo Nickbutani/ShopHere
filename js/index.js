@@ -34,7 +34,7 @@ function checkVerification(to, code) {
 }
 
 // Example usage
-const phoneNumber = "+15707039829"; // Replace with the phone number entered by the user
+const phoneNumber = "5707039829"; // Replace with the phone number entered by the user
 
 // Send the SMS verification
 sendVerification(phoneNumber)
